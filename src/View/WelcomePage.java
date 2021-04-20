@@ -36,7 +36,7 @@ public class WelcomePage extends javax.swing.JFrame {
         jReturnButton = new javax.swing.JButton();
         jRedBackground = new javax.swing.JLabel();
         jMenuBar = new javax.swing.JMenuBar();
-        cartButon = new javax.swing.JMenu();
+        jMenuFile = new javax.swing.JMenu();
         jCart = new javax.swing.JMenuItem();
         jExit = new javax.swing.JMenuItem();
 
@@ -90,16 +90,11 @@ public class WelcomePage extends javax.swing.JFrame {
         getContentPane().add(jRedBackground);
         jRedBackground.setBounds(0, 0, 530, 300);
 
-        cartButon.setText("File");
+        jMenuFile.setText("File");
 
         jCart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/images/icons/baseline_shopping_cart_black_24dp.png"))); // NOI18N
         jCart.setText("Cart");
-        jCart.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCartActionPerformed(evt);
-            }
-        });
-        cartButon.add(jCart);
+        jMenuFile.add(jCart);
 
         jExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/images/icons/baseline_exit_to_app_black_24dp.png"))); // NOI18N
         jExit.setText("Exit");
@@ -108,9 +103,9 @@ public class WelcomePage extends javax.swing.JFrame {
                 jExitActionPerformed(evt);
             }
         });
-        cartButon.add(jExit);
+        jMenuFile.add(jExit);
 
-        jMenuBar.add(cartButon);
+        jMenuBar.add(jMenuFile);
 
         setJMenuBar(jMenuBar);
 
@@ -137,11 +132,6 @@ public class WelcomePage extends javax.swing.JFrame {
     private void jExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jExitActionPerformed
       setDefaultCloseOperation(WelcomePage.EXIT_ON_CLOSE);
     }//GEN-LAST:event_jExitActionPerformed
-
-    private void jCartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCartActionPerformed
-     new Cart().setVisible(true);//show the WelcomePage when the button is clicked
-        dispose();//close the current screen
-    }//GEN-LAST:event_jCartActionPerformed
 
     /**
      * @param args the command line arguments
@@ -179,12 +169,12 @@ public class WelcomePage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu cartButon;
     private javax.swing.JLabel jCards;
     private javax.swing.JMenuItem jCart;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JMenuItem jExit;
     private javax.swing.JMenuBar jMenuBar;
+    private javax.swing.JMenu jMenuFile;
     private javax.swing.JLabel jOptions;
     private javax.swing.JLabel jRedBackground;
     private javax.swing.JButton jRentButton;
