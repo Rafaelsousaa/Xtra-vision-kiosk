@@ -31,7 +31,9 @@ public class SeriePage extends javax.swing.JFrame {
         }
         
     }
-
+    
+    
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -241,6 +243,7 @@ public class SeriePage extends javax.swing.JFrame {
     private void jHomeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jHomeButtonActionPerformed
         new WelcomePage().setVisible(true); //show the WelcomePage when the button is clicked
         dispose(); //close the current screen
+        
     }//GEN-LAST:event_jHomeButtonActionPerformed
 
     private void btnShowAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnShowAllActionPerformed

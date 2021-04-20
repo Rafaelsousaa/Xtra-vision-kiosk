@@ -267,6 +267,8 @@ public class Cart extends javax.swing.JFrame {
             System.out.println(e);
         }
     }
+    
+   
     private double total;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BackToMovie;
